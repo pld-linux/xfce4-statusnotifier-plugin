@@ -1,11 +1,11 @@
 Summary:	A panel area for status notifier items (application indicators)
 Name:		xfce4-statusnotifier-plugin
-Version:	0.2.2
+Version:	0.2.3
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-statusnotifier-plugin/0.2/%{name}-%{version}.tar.bz2
-# Source0-md5:	a21ae838aa26d60375b11619fbfbdec4
+# Source0-md5:	ea7dc4ba444b61840706107463ec0459
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-statusnotifier-plugin
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README THANKS
+%doc AUTHORS ChangeLog NEWS THANKS
 %attr(755,root,root) %{_libdir}/xfce4/panel/plugins/libstatusnotifier.so
 %{_datadir}/xfce4/panel/plugins/statusnotifier.desktop
 %{_iconsdir}/hicolor/*x*/apps/xfce4-statusnotifier-plugin.png
